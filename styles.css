@@ -74,6 +74,15 @@ div.sections-container {
   flex-flow: column nowrap;
   gap: 31px;
 }
+.recipe-img-info,
+header,
+.prep-div {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
 .sections-container>hr {
   height: 1px;
   border: 0;
@@ -123,6 +132,7 @@ ul>li::marker {
 }
 .prep-time {
   color: var(--rose-800);
+  font: var(--text-preset-h3);
 }
 .prep-list>li::marker {
   color: var(--rose-800);
