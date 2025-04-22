@@ -82,7 +82,15 @@ header,
   grid-template-columns: 1fr;
   gap: 32px;
 }
-
+header {
+  gap: 24px;
+}
+.prep-div {
+  gap: 14px;
+  padding: 20px 24px 22px;
+  background-color: var(--rose-50);
+  border-radius: 12px;
+}
 .sections-container>hr {
   height: 1px;
   border: 0;
@@ -143,7 +151,25 @@ ul>li {
 ol>li {
   padding-left: 1rem;
 }
-
+table.nutritional-values {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--stone-150);
+  padding: 12px 32px;
+  width: 100%;
+  font: var(--text-preset-body);
+}
+tr:last-child {
+  border: none;
+}
+td:last-child {
+  color: var(--brown-800);
+}
 
 .attribution {
   font-size: 12px;
