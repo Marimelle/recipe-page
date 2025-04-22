@@ -175,10 +175,20 @@ td:last-child {
   font-size: 12px;
   text-align: center;
   padding: 0.5rem;
+  border-top: 2px solid var(--stone-150);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 505px) {
+  article {
+    padding: 36px;
+    gap: 26px;
+  }
+  img {
+    position: unset;
+    height: min(100%, 300px);
+
+  }
 }
