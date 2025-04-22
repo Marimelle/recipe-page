@@ -69,10 +69,26 @@ article {
   gap: 32px;
   position: relative;
 }
+div.sections-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 31px;
+}
+.sections-container>hr {
+  height: 1px;
+  border: 0;
+  background-color: var(--stone-150);
+  width: 100%;
+}
+.sections-container>section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
 img {
   object-fit: cover;
   width: 100%;
-  max-height: 170px;
+  height: 170px;
   position: absolute;
   top: 0;
   left: 0;
@@ -86,6 +102,12 @@ h2 {
   color: var(--brown-800);
 }
 ol, ul {
+  padding-left: 1.35rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+ol {
   padding-left: 1.5rem;
 }
 ol>li::marker {
@@ -105,9 +127,13 @@ ul>li::marker {
 .prep-list>li::marker {
   color: var(--rose-800);
 }
-li {
-  padding-left: 1.2rem;
+ul>li {
+  padding-left: 1.15rem;
 }
+ol>li {
+  padding-left: 1rem;
+}
+
 
 .attribution {
   font-size: 12px;
