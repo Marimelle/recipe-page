@@ -56,16 +56,16 @@
 .boldtext {
   font-weight: 700;
 }
-  body {
-    background-color: var(--stone-100);
-  }
+body {
+  background-color: var(--stone-100);
+}
 article {
   display: flex;
   flex-flow: column;
   background-color: var(--white);
   margin: auto;
-  max-width: clamp(375px,75vw, 800px);
-  padding: 212px 32px 32px 32px;
+  max-width: clamp(375px,80vw, 800px);
+  padding: 212px 32px 0 32px;
   gap: 32px;
   position: relative;
 }
