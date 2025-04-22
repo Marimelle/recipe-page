@@ -42,7 +42,7 @@
   /* For H1 recipe title */
   --text-preset-h1: normal 400 36px/1.0 'Young Serif', serif;
   /* Section headers Ingredients, Instructions and Nutrition */
-  --text-preset-h2: normal 400 28px/1.2 'Young Serif', serif;
+  --text-preset-h2: normal 400 28px/1.21 'Young Serif', serif;
   /* Preparation time text heading */
   --text-preset-h3: normal 600 20px/1.2 Outfit, sans-serif;
   /* Body copy, regular font weight */
@@ -53,6 +53,9 @@
   font: var(--text-preset-body);
   color: var(--stone-600);
 }
+.boldtext {
+  font-weight: 700;
+}
   body {
     background-color: var(--stone-100);
   }
@@ -61,9 +64,9 @@ article {
   flex-flow: column;
   background-color: var(--white);
   margin: auto;
-  max-width: 375px;
-  padding: 210px 32px 32px 32px;
-  gap: 34px;
+  max-width: clamp(375px,75vw, 800px);
+  padding: 212px 32px 32px 32px;
+  gap: 32px;
   position: relative;
 }
 img {
@@ -82,7 +85,29 @@ h2 {
   font: var(--text-preset-h2);
   color: var(--brown-800);
 }
-
+ol, ul {
+  padding-left: 1.5rem;
+}
+ol>li::marker {
+  font-family: var(--text-preset-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--brown-800);
+}
+ul>li::marker {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--brown-800);
+}
+.prep-time {
+  color: var(--rose-800);
+}
+.prep-list>li::marker {
+  color: var(--rose-800);
+}
+li {
+  padding-left: 1.2rem;
+}
 
 .attribution {
   font-size: 12px;
