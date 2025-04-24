@@ -68,6 +68,7 @@ article {
   padding: 212px 32px 0 32px;
   gap: 32px;
   position: relative;
+  border-radius: 0;
 }
 div.sections-container {
   display: flex;
@@ -102,6 +103,7 @@ header {
   flex-flow: column nowrap;
   gap: 20px;
 }
+
 img {
   object-fit: cover;
   width: 100%;
@@ -155,6 +157,7 @@ table.nutritional-values {
   border: none;
   border-collapse: collapse;
   width: 100%;
+  margin-top: 4px;
 }
 tr {
   display: grid;
@@ -189,6 +192,18 @@ td:last-child {
     padding: 40px;
     gap: 26px;
   }
+  .recipe-img-info {
+    gap: 34px;
+  }
+  .prep-div {
+    padding: 28px;
+  }
+  .sections-container {
+    gap: 30px;
+  }
+  .sections-container>section {
+    gap: 22px;
+  }
   img {
     position: unset;
     height: 300px;
@@ -197,5 +212,8 @@ td:last-child {
   }
   h1 {
     font-size: 40px;
+  }
+  table.nutritional-values {
+    margin-top: -12px;
   }
 }
