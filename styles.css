@@ -65,7 +65,7 @@ article {
   background-color: var(--white);
   margin: auto;
   width: max(23.4375rem, 100%);
-  padding: 13.25rem 2rem 2rem 2rem;
+  padding: calc(10.9rem + 10vw) 2rem 2rem 2rem;
   gap: 2rem;
   position: relative;
   border-radius: 0;
@@ -186,10 +186,10 @@ td:last-child {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
+/* FOR SCREENS LARGER THAN 600PX IN WIDTH */
 @media screen and (min-width: 600px) {
   article {
-    width: min(80vw, 50rem);
+    width: min(80vw, 46rem);
     border-radius: 1.5rem;
     margin: calc(1rem + 2vw) auto;
     padding: 2.5rem;
