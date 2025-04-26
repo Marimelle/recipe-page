@@ -187,7 +187,7 @@ td:last-child {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 600px) {
   article {
     width: min(80vw, 50rem);
     border-radius: 1.5rem;
