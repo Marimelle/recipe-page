@@ -64,7 +64,7 @@ article {
   flex-flow: column;
   background-color: var(--white);
   margin: auto;
-  max-width: clamp(375px,80vw, 800px);
+  width: max(375px, 100%);
   padding: 212px 32px 32px 32px;
   gap: 32px;
   position: relative;
@@ -107,7 +107,8 @@ header {
 img {
   object-fit: cover;
   width: 100%;
-  height: 170px;
+  height: calc(8.279rem + 10vw);
+  min-height: 170px;
   position: absolute;
   top: 0;
   left: 0;
@@ -180,14 +181,15 @@ td:last-child {
   text-align: center;
   padding: 0.5rem;
   border-top: 2px solid var(--stone-150);
-  background-color: var(--stone-150);
+  background-color: var(--stone-100);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   article {
+    width: min(80vw, 800px);
     border-radius: 24px;
     margin: calc(1rem + 2vw) auto;
     padding: 40px;
