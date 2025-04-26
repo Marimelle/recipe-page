@@ -191,7 +191,7 @@ td:last-child {
   article {
     max-width: 46rem;
     border-radius: 1.5rem;
-    margin-top: 7.625rem auto 7.625rem auto !important;
+    margin: 7.625rem auto 7.625rem !important;
     padding: 2.5rem;
     gap: 1.625rem;
   }
